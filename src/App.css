@@ -1,0 +1,23 @@
+.body-dark{
+  background-color: rgb(60, 60, 60);
+  color: white;
+}
+.body{
+  min-height: 100vh;
+  transition: all 0.5s;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  padding: 10px 20px;
+}
+
+.head{
+  margin: 0 auto;
+  min-width: 330px;
+  width: 70%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
