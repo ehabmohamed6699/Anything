@@ -34,12 +34,12 @@ const RockPaperScissors = () => {
             <div className="result">
                 <div className="result-card">
                     <p>You</p>
-                    <img src={imgs[selectedOption]} alt="" width={150}/>
+                    <img src={imgs[selectedOption]} alt="" width={100}/>
                 </div>
                 <p>vs</p>
                 <div className="result-card">
                     <p>Computer</p>
-                    <img src={imgs[computerSelection]} alt="" width={150}/>
+                    <img src={imgs[computerSelection]} alt="" width={100}/>
                 </div>
             </div>
             <h3>{gameStatus}</h3>
@@ -50,19 +50,19 @@ const RockPaperScissors = () => {
             <button onClick={() => {
                 runGame(0)
             }}>
-                <img src={rock} alt="" width={150}/>
+                <img src={rock} alt="" width={100}/>
                 <p>Rock</p>
             </button>
             <button onClick={() => {
                 runGame(1)
             }}>
-                <img src={paper} alt="" width={150}/>
+                <img src={paper} alt="" width={100}/>
                 <p>Paper</p>
             </button>
             <button onClick={() => {
                 runGame(2)
             }}>
-                <img src={scissors} alt="" width={150}/>
+                <img src={scissors} alt="" width={100}/>
                 <p>Scissors</p>
             </button>
         </div></>}

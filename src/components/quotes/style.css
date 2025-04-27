@@ -33,3 +33,8 @@
     font-style: italic;
     font-size: 14px;
 }
+
+.quote-container button{
+    margin: 10px 0;
+    padding: 5px;
+}
