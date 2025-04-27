@@ -1,16 +1,22 @@
-.body-dark{
-  background-color: rgb(60, 60, 60);
-  color: white;
-}
 .body{
   min-height: 100vh;
   transition: all 0.5s;
+  color: rgb(44, 62, 103);
+}
+.body-dark{
+  background-color: rgb(44, 62, 103);
+  color: white;
 }
 
 .navbar{
   width: 100%;
   display: flex;
+  align-items: center;
+  gap: 20px;
   padding: 10px 20px;
+}
+.navbar a{
+  color: inherit;
 }
 
 .head{
@@ -21,3 +27,14 @@
   font-size: 40px;
   font-weight: bold;
 }
+
+.body-dark .head{
+  color: white;
+}
+
+.military-progress-head{
+  font-size: 28px;
+  margin: 20px;
+}
+
+

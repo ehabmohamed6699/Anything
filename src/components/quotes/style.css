@@ -1,0 +1,35 @@
+.quote-container{
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.quote-container h1{
+    font-size: 28px;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.quote-container p:first-of-type{
+    font-size: 24px;
+}
+
+.quote-container .quote{
+    font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 3px solid rgb(44, 62, 103);
+}
+
+.body-dark .quote{
+    border-left: 3px solid white;
+}
+
+.quote-container .author{
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+}

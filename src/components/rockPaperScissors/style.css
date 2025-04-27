@@ -1,0 +1,33 @@
+.rock-paper-scissors-container{
+    width: 90%;
+    max-width: 830px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.rock-paper-scissors-container h1{
+    margin-bottom: 10px;
+}
+.rock-paper-scissors-container p{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.result{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reset-btn{
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.roles-choice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

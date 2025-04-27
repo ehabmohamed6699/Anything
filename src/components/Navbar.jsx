@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <ModeSwitch/>
+        <p>Theme toggle made using <a href="https://zustand.docs.pmnd.rs/">Zustand</a></p>
     </div>
   )
 }

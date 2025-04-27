@@ -8,8 +8,9 @@
     cursor: pointer;
 }
 
-.switch-dark{
-    background-color: rgb(60, 60, 60);
+.body-dark .switch{
+    background-color: rgb(44, 62, 103)
+    ;
 }
 
 .switch-btn{
@@ -28,14 +29,92 @@
     box-shadow: 0px 0px 5px black;
 }
 
-.switch-btn-light{
+.switch-btn{
     left: 2.5px;
     color: rgb(253, 168, 10);
     background-color: white;
 }
 
-.switch-btn-dark{
+.body-dark .switch-btn{
     left: 42.5px;
     color: rgb(35, 136, 176);
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(44, 62, 103)
+    ;
+}
+
+.months-container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.months-container p{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.month-complete{
+    color: rgb(29, 204, 29);
+}
+.bar{
+    width: calc((90% - 600px) / 11);
+    height: 5px;
+    background-color: rgb(159, 159, 159);
+    position: relative;
+}
+
+.bar-complete{
+    background-color: rgb(29, 204, 29);
+}
+.month-complete + .bar:not(.bar-complete) {
+    background-color: rgb(29, 204, 29);
+}
+
+.next-month::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(29, 204, 29);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: beat 1.5s infinite;
+}
+
+@keyframes beat{
+    0%{
+        width: 50px;
+        height: 50px;
+        opacity: 1;
+    }
+    100%{
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .months-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .bar{
+        width: 5px;
+        height: 80px;
+    }
 }
