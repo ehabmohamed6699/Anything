@@ -49,7 +49,7 @@ const Quotes = () => {
           author: "Arwah Syrianousy"
         }
       ];
-      const [randomIdx, _] = useState(Math.floor(Math.random() * quotes.length))
+      const [randomIdx, setRandomIdx] = useState(Math.floor(Math.random() * quotes.length))
       
   return (
     <div className='quote-container'>
@@ -57,6 +57,9 @@ const Quotes = () => {
         <p><RiDoubleQuotesL/></p>
         <p className='quote'>{quotes[randomIdx].text}</p>
         <p className='author'>{quotes[randomIdx].author}</p>
+        <button onClick={() => {
+          setRandomIdx(Math.floor(Math.random() * quotes.length))
+        }}>Next quote</button>
     </div>
   )
 }

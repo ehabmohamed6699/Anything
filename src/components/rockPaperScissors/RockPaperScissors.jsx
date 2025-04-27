@@ -17,7 +17,7 @@ const RockPaperScissors = () => {
         }else if((choice === 0 && computerSelection === 2) || (choice === 1 && computerSelection === 0) || (choice === 2 && computerSelection === 1)){
             setGameStatus("You Win!")
         }else{
-            setGameStatus("You Lose")
+            setGameStatus("You Lose!")
         }
         setGameOver(true)
     }
